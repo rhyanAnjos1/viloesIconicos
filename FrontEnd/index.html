@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vilões Icônicos</title>
+
+    <link rel="stylesheet" href="/Style/style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main class="container">
+
+        <header class="header">
+            <div>
+        
+                <h1>VILÕES ICÔNICOS</h1>
+                <p>CADASTRO E GERENCIAMENTO DE AMEAÇAS</p>
+            </div>
+
+            <div class="header-icon">
+                ☠
+            </div>
+        </header>
+
+
+        <section class="form-card">
+
+            <div class="section-title">
+                <div class="icon">⚔</div>
+
+                <div>
+                    <h2 id="tituloFormulario">NOVO VILÃO</h2>
+                    <p>Cadastre uma nova ameaça no sistema</p>
+                </div>
+            </div>
+
+
+            <form id="formVilao">
+
+                <input type="hidden" id="idVilao">
+
+
+                <div class="form-grid">
+
+                    <div class="campo campo-grande">
+
+                        <label for="nomeVilao">
+                            Nome do Vilão
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nomeVilao"
+                            placeholder="Ex.: Darth Vader"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo campo-grande">
+
+                        <label for="franquiaObra">
+                            Franquia / Obra
+                        </label>
+
+                        <input
+                            type="text"
+                            id="franquiaObra"
+                            placeholder="Ex.: Star Wars"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="nivelAmeaca">
+                            Nível de Ameaça
+                        </label>
+
+                        <select id="nivelAmeaca" required>
+
+                            <option value="">
+                                Selecione o nível
+                            </option>
+
+                            <option value="CIDADE">
+                                Cidade
+                            </option>
+
+                            <option value="PAIS">
+                                País
+                            </option>
+
+                            <option value="PLANETA">
+                                Planeta
+                            </option>
+
+                            <option value="UNIVERSO">
+                                Universo
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label>
+                            Possui Superpoderes?
+                        </label>
+
+                        <div class="radio-container">
+
+                            <label class="radio-option">
+
+                                <input
+                                    type="radio"
+                                    name="possuiSuperpoderes"
+                                    value="true"
+                                >
+
+                                <span>Sim</span>
+
+                            </label>
+
+
+                            <label class="radio-option">
+
+                                <input
+                                    type="radio"
+                                    name="possuiSuperpoderes"
+                                    value="false"
+                                >
+
+                                <span>Não</span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-buttons">
+
+                    <button
+                        type="submit"
+                        id="btnSalvar"
+                        class="btn-primary"
+                    >
+                        <span></span>
+                        CADASTRAR VILÃO
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="btnCancelar"
+                        class="btn-secondary"
+                        onclick="cancelarEdicao()"
+                    >
+                        Cancelar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <div id="mensagem"></div>
+
+
+        <section class="lista-card">
+
+            <div class="lista-header">
+
+                <div>
+
+                    <span class="subtitle">
+                        DATABASE
+                    </span>
+
+                    <h2>Vilões Cadastrados</h2>
+
+                </div>
+
+                <div class="contador">
+
+                    <span id="contadorViloes">
+                        0
+                    </span>
+
+                    <small>
+                        ameaças
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Vilão</th>
+
+                            <th>Franquia / Obra</th>
+
+                            <th>Ameaça</th>
+
+                            <th>Superpoderes</th>
+
+                            <th>Ações</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="tabelaViloes"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <span>
+                VILÕES ICÔNICOS
+            </span>
+
+            <span>
+                SYSTEM ONLINE ●
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="/Script/script.js"></script>
+
+</body>
+
+</html>
