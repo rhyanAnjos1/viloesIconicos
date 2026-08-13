@@ -495,16 +495,16 @@ O sistema pode trabalhar com diversos personagens da cultura pop.
 
 | Vilão        | Universo | Nível de ameaça |
 | ------------ | -------- | --------------: |
-| Coringa      | DC       |              10 |
-| Thanos       | Marvel   |              10 |
-| Darkseid     | DC       |              10 |
-| Duende Verde | Marvel   |               8 |
-| Loki         | Marvel   |               8 |
-| Magneto      | Marvel   |               8 |
-| Lex Luthor   | DC       |               8 |
-| Ultron       | Marvel   |               9 |
-| Venom        | Marvel   |               7 |
-| Arlequina    | DC       |               6 |
+| Coringa      | DC       |              CIDADE |
+| Thanos       | Marvel   |              UNIVERSO |
+| Darkseid     | DC       |              UNIVERSO |
+| Duende Verde | Marvel   |               CIDADE |
+| Loki         | Marvel   |               MUNDO |
+| Magneto      | Marvel   |               MUNDO |
+| Lex Luthor   | DC       |               MUNDO |
+| Ultron       | Marvel   |               UNIVERSO |
+| Venom        | Marvel   |               MUNDO |
+| Arlequina    | DC       |               CIDADE |
 
 ---
 
