@@ -62,7 +62,7 @@ function listarViloes() {
                         >
                             <div>
                                 <span>☠</span>
-                                <p>Nenhum vilão cadastrado.</p>
+                                <p>NENHUM VILÃO CADASTRADO.</p>
                             </div>
                         </td>
                     </tr>
