@@ -273,15 +273,15 @@ function salvarVilao(event) {
 
     fetch(url, {
 
-        method: metodo,
+            method: metodo,
 
-        headers: {
-            "Content-Type": "application/json"
-        },
+            headers: {
+                "Content-Type": "application/json"
+            },
 
-        body: JSON.stringify(vilao)
+            body: JSON.stringify(vilao)
 
-    })
+        })
 
         .then(async response => {
 
@@ -307,9 +307,9 @@ function salvarVilao(event) {
 
             mostrarMensagem(
 
-                id
-                    ? "Vilão atualizado com sucesso!"
-                    : "Vilão cadastrado com sucesso!",
+                id ?
+                "Vilão atualizado com sucesso!" :
+                "Vilão cadastrado com sucesso!",
 
                 "sucesso"
 
@@ -451,9 +451,9 @@ function excluirVilao(id) {
 
     fetch(`${API_URL}/${id}`, {
 
-        method: "DELETE"
+            method: "DELETE"
 
-    })
+        })
 
         .then(response => {
 
